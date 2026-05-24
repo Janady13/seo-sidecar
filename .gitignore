@@ -1,0 +1,41 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+build/
+dist/
+*.egg-info/
+.pytest_cache/
+
+# Virtualenv
+.venv/
+venv/
+env/
+
+# Go
+*.exe
+*.test
+*.prof
+
+# SQLite runtime state (this is the whole point of the sidecar)
+*.db
+*.db-journal
+*.sqlite
+*.sqlite-journal
+
+# Logs
+*.log
+
+# Environment / secrets
+.env
+.env.*
+!.env.example
+
+# OS / editor
+.DS_Store
+.idea/
+.vscode/
+*.swp
+*.swo

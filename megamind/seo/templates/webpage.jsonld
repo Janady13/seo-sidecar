@@ -1,0 +1,13 @@
+{
+  "@context": "https://schema.org",
+  "@type": "WebPage",
+  "name": "{{.title}}",
+  "url": "{{.canonical}}",
+  "description": "{{.description}}",
+  "isPartOf": {
+    "@type": "WebSite",
+    "name": "{{.siteKey}}",
+    "url": "{{.baseURL}}"
+  },
+  "dateModified": "{{.dateModified}}"
+}

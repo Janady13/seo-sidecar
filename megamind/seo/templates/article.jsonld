@@ -1,0 +1,22 @@
+{
+  "@context": "https://schema.org",
+  "@type": "Article",
+  "headline": "{{.title}}",
+  "url": "{{.canonical}}",
+  "description": "{{.description}}",
+  "author": {
+    "@type": "Person",
+    "name": "{{.author}}"
+  },
+  "datePublished": "{{.datePublished}}",
+  "dateModified": "{{.dateModified}}",
+  "publisher": {
+    "@type": "Organization",
+    "name": "{{.siteKey}}",
+    "url": "{{.baseURL}}"
+  },
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "{{.canonical}}"
+  }
+}

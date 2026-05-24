@@ -1,0 +1,19 @@
+{
+  "@context": "https://schema.org",
+  "@type": "ProfilePage",
+  "name": "{{.title}}",
+  "url": "{{.canonical}}",
+  "description": "{{.description}}",
+  "mainEntity": {
+    "@type": "Person",
+    "name": "{{.personName}}",
+    "url": "{{.canonical}}",
+    "description": "{{.description}}",
+    "sameAs": [
+      {{range $i, $link := .sameAs}}
+      {{if $i}},{{end}}
+      "{{$link}}"
+      {{end}}
+    ]
+  }
+}

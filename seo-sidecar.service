@@ -1,0 +1,33 @@
+[Unit]
+Description=SEO Schema Sidecar — serves JSON-LD to nginx from MEGAMIND pushes
+After=network.target
+Wants=network-online.target
+
+[Service]
+Type=simple
+User=www-data
+Group=www-data
+
+ExecStart=/usr/bin/python3 -m uvicorn sidecar:app --host 127.0.0.1 --port 9090
+WorkingDirectory=/opt/seo-sidecar
+
+# Environment
+Environment="SEO_DB_PATH=/var/lib/seo-sidecar/schemas.db"
+Environment="SEO_AUTH_TOKEN=CHANGE_ME_BEFORE_DEPLOY"
+Environment="SEO_HOST=127.0.0.1"
+Environment="SEO_PORT=9090"
+
+# Hardening
+ProtectSystem=strict
+ReadWritePaths=/var/lib/seo-sidecar
+PrivateTmp=true
+NoNewPrivileges=true
+
+# Restart policy
+Restart=always
+RestartSec=3
+StartLimitBurst=5
+StartLimitIntervalSec=60
+
+[Install]
+WantedBy=multi-user.target

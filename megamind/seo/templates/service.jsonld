@@ -1,0 +1,17 @@
+{
+  "@context": "https://schema.org",
+  "@type": "Service",
+  "name": "{{.title}}",
+  "url": "{{.canonical}}",
+  "description": "{{.description}}",
+  "provider": {
+    "@type": "Organization",
+    "name": "{{.siteKey}}",
+    "url": "{{.baseURL}}"
+  },
+  "areaServed": {
+    "@type": "Place",
+    "name": "{{.areaServed}}"
+  },
+  "serviceType": "{{.serviceType}}"
+}
