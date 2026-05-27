@@ -4,7 +4,7 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "seo-sidecar"
-version = "0.2.0"
+version = "0.2.1"
 description = "FastAPI + nginx SSI sidecar for injecting fresh Schema.org JSON-LD into nginx-served sites without redeploys."
 readme = "README.md"
 requires-python = ">=3.10"
