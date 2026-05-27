@@ -340,3 +340,16 @@ async def get_ga_top_pages(domain: str, limit: int = 25, authorization: str = He
 if __name__ == "__main__":
     import uvicorn
     uvicorn.run(app, host=LISTEN_HOST, port=LISTEN_PORT)
+
+
+def main():
+    """CLI entry point — runs the FastAPI sidecar on port 9090."""
+    import uvicorn
+    import os
+    port = int(os.environ.get("PORT", "9090"))
+    host = os.environ.get("HOST", "127.0.0.1")
+    uvicorn.run("sidecar:app", host=host, port=port, reload=False)
+
+
+if __name__ == "__main__":
+    main()
