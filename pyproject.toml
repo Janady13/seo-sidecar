@@ -1,0 +1,56 @@
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "seo-sidecar"
+version = "0.2.0"
+description = "FastAPI + nginx SSI sidecar for injecting fresh Schema.org JSON-LD into nginx-served sites without redeploys."
+readme = "README.md"
+requires-python = ">=3.10"
+license = {text = "MIT"}
+authors = [
+    {name = "Joseph W. Anady", email = "admin@thatdeveloperguy.com"},
+]
+keywords = [
+    "seo",
+    "aeo",
+    "geo",
+    "schema.org",
+    "json-ld",
+    "structured-data",
+    "nginx",
+    "ssi",
+    "fastapi",
+    "ai-citation",
+]
+classifiers = [
+    "Development Status :: 4 - Beta",
+    "Framework :: FastAPI",
+    "Intended Audience :: Developers",
+    "License :: OSI Approved :: MIT License",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+    "Topic :: Internet :: WWW/HTTP",
+    "Topic :: Software Development :: Libraries",
+]
+dependencies = [
+    "fastapi>=0.100.0",
+    "uvicorn[standard]>=0.23.0",
+    "pydantic>=2.0.0",
+]
+
+[project.urls]
+Homepage = "https://www.thatdevpro.com/open-source/seo-sidecar/"
+Repository = "https://github.com/Janady13/seo-sidecar"
+Issues = "https://github.com/Janady13/seo-sidecar/issues"
+Documentation = "https://www.thatdevpro.com/reference/"
+"Companion paper (Zenodo)" = "https://doi.org/10.5281/zenodo.20404971"
+
+[project.scripts]
+seo-sidecar = "sidecar:main"
+
+[tool.setuptools]
+py-modules = ["sidecar"]
