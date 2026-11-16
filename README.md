@@ -161,4 +161,4 @@ MIT © 2026 Joseph W. Anady ([ThatDevPro](https://www.thatdevpro.com)). See [LIC
 
 ---
 
-Built and used in production by **[ThatDevPro](https://www.thatdevpro.com)** — SDVOSB-certified veteran-owned web + AI engineering studio. Cassville, Missouri.
+Built and used in production by **[ThatDevPro](https://www.thatdevpro.com)** — service-disabled veteran-owned web + AI engineering studio. Cassville, Missouri.
