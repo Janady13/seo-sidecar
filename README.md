@@ -162,3 +162,7 @@ MIT © 2026 Joseph W. Anady ([ThatDevPro](https://www.thatdevpro.com)). See [LIC
 ---
 
 Built and used in production by **[ThatDevPro](https://www.thatdevpro.com)** — service-disabled veteran-owned web + AI engineering studio. Cassville, Missouri.
+
+## About
+
+Built by [ThatDeveloperGuy](https://thatdeveloperguy.com/) (THATDEVELOPERGUY LLC), a service-disabled veteran-owned web and AI engineering company in Cassville, Missouri. Founder: [Joseph W. Anady](https://feedthejoe.com/joseph/).
